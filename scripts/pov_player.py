@@ -8,6 +8,7 @@ from obswebsocket import obsws, requests
 import threading
 import json
 import sys
+import os
 import keyboard # detecting keypresses
 
 def open_cs2():
@@ -106,17 +107,20 @@ def close_cs2():
     pyautogui.press('enter')
 
 # Function to load configuration from a JSON file
-def load_config(config_file="config.json"):
+def load_config():
+    """Loads config.json from the config/ directory."""
+    config_path = os.path.join(os.path.dirname(__file__), "..", "config", "config.json")
+    
     try:
-        with open(config_file, "r") as file:
+        with open(config_path, "r") as file:
             config = json.load(file)
         return config
     except FileNotFoundError:
-        print("Error: Config file not found. Make sure config.json exists.")
-        exit()
+        print(f"Error: Config file not found at {config_path}")
+        return None
     except json.JSONDecodeError:
-        print("Error: Config file is not valid JSON. Please check its format.")
-        exit()
+        print("Error: Invalid JSON format in config file.")
+        return None
 
 def obs_connect():
     # Load configuration

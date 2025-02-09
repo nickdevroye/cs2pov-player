@@ -1,0 +1,7 @@
+awpy
+keyboard
+obs-websocket-py
+pandas
+pyautogui
+pygetwindow
+PyQt5
