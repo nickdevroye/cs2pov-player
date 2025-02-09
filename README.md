@@ -69,7 +69,7 @@ python scripts/pov_player.py astralis-vs-wildcard-m1-inferno.dem dev1ce
 The tool requires a `config.json` file stored in the `config/` directory. Example:
 ```json
 {
-    "obs_host": "192.168.1.206",
+    "obs_host": "your_ip_address",
     "obs_port": 4455,
     "obs_password": "your_obs_password",
     "game_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\"
