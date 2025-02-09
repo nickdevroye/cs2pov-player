@@ -1,0 +1,6 @@
+{
+    "obs_host": "YOUR_OBS_IP",
+    "obs_port": 4455,
+    "obs_password": "YOUR_OBS_PASSWORD",
+    "game_path": "C:\\\\Path\\\\To\\\\Your\\\\CS2\\\\Demos\\\\"
+}
