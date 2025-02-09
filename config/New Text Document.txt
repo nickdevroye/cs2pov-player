@@ -1,6 +1,0 @@
-{
-    "obs_host": "localhost",
-    "obs_port": 4455,
-    "obs_password": "your_obs_password",
-    "game_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\"
-}
