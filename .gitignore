@@ -10,3 +10,6 @@ env/
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+# Ignore config file for protection
+config/config.json
